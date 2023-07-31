@@ -13,4 +13,7 @@ Preview of about page
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/aboutpage.png "About Page Preview")
 
 Preview of Login page
-![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Login.png)
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Login.png "Login Page Preview")
+
+Preview of Register Page
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Register.png "Register Page Preview")
