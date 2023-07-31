@@ -9,4 +9,4 @@ For phase one’s deliverable, we decided to implement the website’s design an
 Preview of main page
 ![Alt text](Project-Proposal/Github Photos/mainpage.png?raw=true "Main Page Preview")
 Preview of about page
-![Alt text](Project-Proposal/Github Photos/aboutpage.png?raw=true "About Page Preview")
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/aboutpage.png "About Page Preview")
