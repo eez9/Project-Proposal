@@ -7,6 +7,6 @@ This Current Project is a E-Commerce App that will allow a user to log in and cr
 For phase one’s deliverable, we decided to implement the website’s design and UI elements to grasp a better understanding on how to implement the backend portion of the website (Phase 2) by completing the front end portion of the website. This allows for us to grasp the UI workflow and user experience before the backend is actually implemented, thereby avoiding common mistakes where the UI elements and website look are designed in an unintuitive fashion as a result of designing the backend first. In this report, we’ll be going over our implementation of the frontend design as outlined in the Phase one deliverables report. Our team overcame these challenges by using effective communication and making sure that our goal was as simple as possible, whilst trying to effectively achieve our frontend design in a manner that makes sense to both us as developers and users who will interact with the site.
 
 Preview of main page
-![Alt text](Project-Proposal/Github Photos/mainpage.png?raw=true "Main Page Preview")
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/mainpage.png "Main Page Preview")
 Preview of about page
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/aboutpage.png "About Page Preview")
