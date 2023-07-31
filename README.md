@@ -8,5 +8,6 @@ For phase one’s deliverable, we decided to implement the website’s design an
 
 Preview of main page
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/mainpage.png "Main Page Preview")
+
 Preview of about page
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/aboutpage.png "About Page Preview")
