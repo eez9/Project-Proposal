@@ -20,5 +20,17 @@ Preview of Register Page
 
 For phase two’s deliverable, we decided to implement the back end portion of the application. By doing this, It allows for us to connect all of the different pieces created, to make the application work as a whole and have a better user experience. for pahse we go over our implementation of the backend design as outlined in the Phase two section of the deliverables report. Our team overcame these challenges by using effective communication and making sure that our goal was met and understood to the best of our ability, while trying to effectively achieve our backend design in a manner that makes sense to both us as developers and users who will interact with the site.
 
+Preview of API setup
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/ApiSetup.png)
+
+Preview of Data Base
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Database_Demo.png)
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/DataBaseDemo2.png)
+
+Preview of Listings
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/listing_demo.png)
+
+Preview of redesigned Main Page
+![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/HomeDemo.png)
 
 
