@@ -1,13 +1,12 @@
 import { ListingModel } from "../models/ListingModel.mjs"
 
 //johnslist : category, title, contact, description, createdBy
-const addListing = async (category, title, contact, description, createdByID) => {
+const addListing = async (title, category, description, contact) => {
     let ListingDoc = new ListingModel({
         category: category,
         title: title,
         contact: contact,
         description: description,
-        createdBy: createdByID,
     })
 
     const result = await ListingDoc.save()
@@ -21,4 +20,10 @@ const getCategoryListing = async (catToSearch) => {
     return data
 }
 
-export {addListing, getCategoryListing}
+const getAllListing = async () => {
+    const data = await ListingModel.find()
+
+    return data
+}
+
+export {addListing, getCategoryListing, getAllListing}

@@ -6,15 +6,13 @@ import validator from "validator";
 
 //structure: name, email, age
 const userSchema = mongoose.Schema({
-    name: String,
-    username: String,
-    password: String,
     email: {
         type: String,
         validate: (value)=>{
             return validator.isEmail(value)
         }
-    }
+    },
+    password: String,
 })
 
 const UserModel = mongoose.model("users", userSchema)

@@ -13,6 +13,4 @@ const addUser = async (name, username, password, email) => {
     console.log("add user to DB", result)
 }
 
-console.log(UserModel.find())
-
 export {addUser}

@@ -15,7 +15,7 @@ function Login() {
 
         try{
 
-            await axios.post("http://localhost:1234/",{
+            await axios.post("http://localhost:8000/",{
                 email,password
             })
             .then(res=>{

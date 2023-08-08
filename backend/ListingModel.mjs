@@ -2,14 +2,10 @@
 import mongoose from "mongoose";
 
 const ListingSchema = mongoose.Schema({
-    category: String,
     title: String,
-    contact: String,
+    category: String,
     description: String,
-    createdBy: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "users"
-    }
+    contact: String
 })
 
 const ListingModel = mongoose.model("listing", ListingSchema)
