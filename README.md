@@ -35,9 +35,15 @@ Preview of redesigned Main Page
 
 Preview of Dependencies
 
+For the dependencies, make sure you download all of the ones listed here using npm i, failure to download these will result in the project not functioning correctly!
+
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Dependencies.png)
 
 Preview of Folders
 
+Follow the folder structure outlined here to make sure that the files are all in their correct spots in regards to the project
+
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Folders.png)
 
+Once you've downloaded and placed all the files correctly, and downloaded all the necessary dependencies, open up a split terminal, and an extra terminal. in the extra terminal, run the command 'mongosh' to set up your mongodDB database connection. (If this is not working, go into task manager -> services -> and find mongoDB, make sure that mongoDB is "running" and not "stopped"). Next, in the split terminal, run "npm start" on one, and 
+"npm run start-app" on the other. Now, you're ready to explore johnslist!
