@@ -1,10 +1,12 @@
 import "./connect.mjs"
 import express from "express";
 import { addUser } from "./src/services/UserService.mjs";
-import { addListing, getCategoryListing } from "./src/services/ListingService.mjs";
+import { addListing, getAllListing, getCategoryListing } from "./src/services/ListingService.mjs";
 import { UserModel } from "./src/models/UserModel.mjs";
 import cors from 'cors'
 import mongoose from "mongoose";
+import users from "./connect.mjs"
+import { ListingModel } from "./src/models/ListingModel.mjs";
 
 //johnslist : category, title, contact, description, createdBy
 //Users : name, username, password, email
@@ -20,10 +22,10 @@ app.get("/",cors(),(req,res)=>{
 })
 
 app.post("/",async(req,res)=>{
-    const{email,password}=req.body
+    let {email, password}=req.body
 
     try{
-        const check=await users.findOne({email:email})
+        const check= await UserModel.findOne({email:email, password:password})
 
         if(check){
             res.json("exist")
@@ -40,29 +42,27 @@ app.post("/",async(req,res)=>{
 })
 
 app.post("/Register",async(req,res)=>{
-    const{email,password}=req.body
+    let {email, password} = req.body
 
-    const data={
+    const userData = new UserModel({
         email: email,
         password: password
-    }
+    })
 
-    try{
-        const check = await users.findOne({email:email})
+    try {
+        const check = await UserModel.findOne({email:email})
 
         if(check){
             res.json("exist")
         }
         else{
             res.json("notexist")
-            await users.insertMany([data])
+            await userData.save();
         }
-
-    }
-    catch(e){
+    } catch(err) {
+        console.log(err)
         res.json("fail")
     }
-
 })
 
 //addUser
@@ -75,6 +75,24 @@ app.post("/addUser", async function(request, response) {
 
     response.status(200).send({message: "Success"})
 })
+
+app.post('/CreateListing', async(req, res) => {
+    let {title, category, description, contact} = req.body
+
+    const listingData = new ListingModel({
+        title: title,
+        category: category,
+        description: description,
+        contact: contact
+    })
+
+    try {
+        await listingData.save();
+        res.send("inserted data..")
+    } catch(err) {
+        console.log(err)
+    }
+});
 
 //addListing
 //method: POST
@@ -96,7 +114,13 @@ app.get("/getCategoryListing", async function(request, response) {
     response.status(200).send(data)
 })
 
-let PORT = 1234;
+app.get("/MyListing", async function(request, response) {
+    let data = await getAllListing()
+
+    response.status(200).send(data)
+})
+
+let PORT = 8000;
 
 app.listen(PORT, function(){
     console.log("API running at port: ", PORT)
