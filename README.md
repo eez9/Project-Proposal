@@ -33,7 +33,7 @@ Preview of Listings
 Preview of redesigned Main Page
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/HomeDemo.png)
 
-Preview of Dependencies \n
+Preview of Dependencies
 
 ![Alt text](https://github.com/eez9/Project-Proposal/blob/main/Github%20Photos/Dependencies.png)
 
