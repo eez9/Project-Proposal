@@ -8,19 +8,21 @@ import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
 import Form from 'react-bootstrap/Form';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom"
 
 function About() {
+  const history = useNavigate()
   return (
     <div>
         <header>
       <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Johns' List</Navbar.Brand>
+        <Navbar.Brand href="/home" onSelect={history('/home')}>Johns' List</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Login</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
+            <Nav.Link href="/" onSelect={history('/')}>Login</Nav.Link>
+            <Nav.Link href="/about" onSelect={history('/about')}>About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
